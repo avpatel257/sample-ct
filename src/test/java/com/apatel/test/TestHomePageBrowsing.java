@@ -26,7 +26,7 @@ public class TestHomePageBrowsing {
     @Before
     public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities().chrome();
-        driver = new RemoteWebDriver(new URL("http://192.168.118.123:4444/wd/hub"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://10.164.167.125:4444/wd/hub"), capabilities);
         baseUrl = "https://www.katalon.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
